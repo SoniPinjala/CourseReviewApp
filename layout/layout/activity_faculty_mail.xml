@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacultyMail">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:paddingLeft="20dp"
+        android:text="Enter mail addresses"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:id="@+id/forgmail_id"
+        android:textSize="20sp"
+        android:layout_marginTop="150dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:id="@+id/gmail_id"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_round"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:paddingLeft="10dp"
+        android:hint="Enter email ids here."
+        android:layout_below="@+id/forgmail_id"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/gmail_id"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_round"
+        android:textAllCaps="false"
+        android:textColor="#E91E63"
+        android:layout_marginTop="20dp"
+        android:id="@+id/submit_id"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/navigation_faculty"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
